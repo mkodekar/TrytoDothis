@@ -8,6 +8,14 @@
         android:background="@color/colorPrimary"
         android:fitsSystemWindows="true">
 
+    <RelativeLayout
+            android:id="@+id/relative"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:layout_height="match_parent"
+            android:layout_margin="?actionBarSize">
+
     <TextView
             android:id="@+id/errorMessgae"
             android:text="Text"
@@ -17,6 +25,7 @@
             android:textAlignment="center"
             android:textSize="24sp"
             android:layout_gravity="center"
+            android:layout_centerInParent="true"
             android:visibility="gone"
             android:textColor="@android:color/white"/>
 
@@ -25,10 +34,13 @@
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
             android:visibility="gone"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true"
             android:background="@android:color/white"
             android:text="Exit"
             android:textColor="@color/colorPrimary"
-            android:layout_gravity="bottom"/>
+            />
 
 
+    </RelativeLayout>
 </android.support.design.widget.CoordinatorLayout>

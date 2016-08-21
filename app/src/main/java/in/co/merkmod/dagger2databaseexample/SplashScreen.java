@@ -7,6 +7,7 @@ import android.support.design.widget.CoordinatorLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatButton;
 import android.view.View;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 import butterknife.BindView;
@@ -44,6 +45,9 @@ public class SplashScreen extends AppCompatActivity implements SplashScreenInter
     @BindView(R.id.button)
     AppCompatButton button;
 
+    @BindView(R.id.relative)
+    RelativeLayout relativeLayout;
+
     @OnClick(R.id.button)
     void onClick(AppCompatButton button) {
         this.finish();
@@ -56,7 +60,7 @@ public class SplashScreen extends AppCompatActivity implements SplashScreenInter
         ButterKnife.bind(this);
         MyApplication.getMyApplicationComponent(this).inject(this);
         splashScreenPresenter  = new SplashScreenPresenter(this);
-        maiLayout.setStatusBarBackgroundResource(R.drawable.launch_screen);
+        maiLayout.setBackgroundResource(R.drawable.launch_screen);
         splashScreenPresenter.fetchCategories();
     }
 
