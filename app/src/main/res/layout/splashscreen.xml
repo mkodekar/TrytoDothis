@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mainContent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true">
+
+    <TextView
+            android:id="@+id/errorMessgae"
+            android:text="Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:textColor="@android:color/white"/>
+
+    <android.support.v7.widget.AppCompatButton
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:visibility="gone"
+            android:background="@android:color/white"
+            android:text="Exit"
+            android:textColor="@color/colorPrimary"
+            android:layout_gravity="bottom"/>
+
+
+</android.support.design.widget.CoordinatorLayout>
